@@ -56,6 +56,34 @@
                         </p>
                     </a>
                 </li>
+                <!-- Grade Level Management -->
+                <li class="nav-item">
+                    <a href="{{ route('grade-level.index') }}" class="nav-link grade-level-management">
+                        <i class="nav-icon fas fa-layer-group"></i>
+                        <p>
+                            {{ __("messages.grade_level_management") }}
+                        </p>
+                    </a>
+                </li>
+                <!-- Teacher Management -->
+                <li class="nav-item">
+                    <a href="{{ route('teacher.index') }}" class="nav-link teacher-management">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>
+                            {{ __("messages.teacher_management") }}
+                        </p>
+                    </a>
+                </li>
+                <!-- Student Management -->
+                <!-- Gender Management -->
+                <li class="nav-item">
+                    <a href="{{ route('gender.index') }}" class="nav-link gender-management">
+                        <i class="nav-icon fas fa-transgender"></i>
+                        <p>
+                            {{ __("messages.gender") }}
+                        </p>
+                    </a>
+                </li>
                 <!-- User Management -->
                 <li class="nav-item">
                     <a href="{{ route('user.index') }}" class="nav-link user-management">

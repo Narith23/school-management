@@ -6,12 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class GradeLevel extends Model
+class StudentClass extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $table = 'grade_levels';
+    protected $table = 'student_classes';
     protected $fillable = [
-        'name',
+        'student_id',
+        'class_id',
+        'year'
     ];
 }

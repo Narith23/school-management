@@ -39,4 +39,15 @@ return [
     "email_or_phone" => "Email or Phone",
     "password" => "Password",
     "remember_me" => "Remember Me",
+    "grade_level" => "Grade Level",
+    "grade_level_management" => "Grade Level Management",
+    // "success" => "Success",
+    # Teacher
+    "teacher" => "Teacher",
+    "teacher_management" => "Teacher Management",
+    "add_teacher" => "Add Teacher",
+    "teacher_name" => "Teacher Name",
+    # gender
+    "gender" => "Gender",
+    "gender_code" => "Gender Code",
 ];

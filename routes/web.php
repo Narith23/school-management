@@ -22,6 +22,15 @@ Route::group(["middleware" => ["auth"]], function () {
     Route::resource("dashboard", "App\Http\Controllers\DashboardController");
     Route::resource("user", "App\Http\Controllers\UserController");
     Route::resource("subject", "App\Http\Controllers\SubjectController");
+    Route::resource("grade-level", "App\Http\Controllers\GradeLevelController");
+    Route::resource("classes", "App\Http\Controllers\ClassesController");
+    Route::resource("student", "App\Http\Controllers\StudentController");
+    Route::resource("student-class", "App\Http\Controllers\StudentClassController");
+    Route::resource("teacher", "App\Http\Controllers\TeacherController");
+    Route::resource('gender', "App\Http\Controllers\GenderController");
+
+    Route::get("subject/{subject}/delete", [\App\Http\Controllers\SubjectController::class, "destroy"])->name("subject.destroy");
+    Route::get("grade-level/{gradeLevel}/delete", [\App\Http\Controllers\GradeLevelController::class, "destroy"])->name("grade-level.destroy");
 });
 
 Route::get("login", [\App\Http\Controllers\UserController::class, "login"])->name("login");

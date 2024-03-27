@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class GradeLevel extends Model
+class StatusAttendance extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $table = 'grade_levels';
+    protected $table = 'status_attendances';
     protected $fillable = [
         'name',
     ];

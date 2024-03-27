@@ -11,9 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('grade_levels', function (Blueprint $table) {
+        Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->bigInteger("user_id");
+            $table->date('dob');
+            $table->bigInteger('gender_id');
+            $table->bigInteger("grade_level_id");
             $table->timestamps();
             $table->softDeletes();
         });
@@ -24,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('grade_levels');
+        Schema::dropIfExists('students');
     }
 };

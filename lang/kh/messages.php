@@ -39,4 +39,7 @@ return [
     "email_or_phone" => "អ៊ីម៉ែល ឬ លេខទូរស័ព្ទ",
     "password" => "លេខសម្ងាត់",
     "remember_me" => "ចងចាំខ្ញុំ",
+    "grade_level" => "កម្រិត​ថ្នាក់",
+    "grade_level_management" => "ការគ្រប់គ្រងកម្រិតថ្នាក់",
+    // "success" => "",
 ];
